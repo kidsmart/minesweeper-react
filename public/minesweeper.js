@@ -9780,6 +9780,7 @@ var Game = function () {
         key: "toggleSelect",
         value: function toggleSelect(obj) {
             this.table.toggleSelect(obj);
+            if (this.hasEnded()) this.table.openAll();
         }
     }, {
         key: "hasWon",
@@ -9997,8 +9998,8 @@ var Minesweeper = function (_React$Component) {
             return _react2.default.createElement(
                 "div",
                 null,
-                this.state.hasWon && "You won",
-                !this.state.isAlive && "You lost",
+                this.state.hasWon && "You won!",
+                !this.state.isAlive && "You lost!",
                 _react2.default.createElement(
                     "button",
                     { onClick: this.newGame },
@@ -10043,8 +10044,8 @@ var Minesweeper = function (_React$Component) {
                             var x = i,
                                 y = j;
                             if (data >= 0) {
-                                console.log(data);
-                                console.log("53");
+                                //console.log(data);
+                                //console.log("53");
                                 return;
                             }
                             _this3.game.toggleSelect({ x: x, y: y });
@@ -10147,7 +10148,7 @@ var Table = function () {
 
             this.table[x][y].fill();
         }
-        console.log(this.getStateString());
+        //console.log(this.getStateString());
     }
 
     _createClass(Table, [{
