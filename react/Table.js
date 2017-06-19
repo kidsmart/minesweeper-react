@@ -33,7 +33,7 @@ class Table {
             this.table[x][y].fill();
 
         }
-        console.log(this.getStateString());
+        //console.log(this.getStateString());
     }
 
     getStateString() {

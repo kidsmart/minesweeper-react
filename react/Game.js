@@ -15,6 +15,7 @@ class Game {
     }
     toggleSelect(obj){
         this.table.toggleSelect(obj);
+        if (this.hasEnded()) this.table.openAll();
     }
     hasWon() {
         return this.table.hasWon();

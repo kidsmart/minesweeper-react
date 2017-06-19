@@ -87,8 +87,8 @@ class Minesweeper extends React.Component {
                    this.timer.run();
                    let x = i, y = j;
                    if (data >= 0) {
-                       console.log(data);
-                       console.log("53");
+                       //console.log(data);
+                       //console.log("53");
                        return;
                    }
                    this.game.toggleSelect({x,y});
