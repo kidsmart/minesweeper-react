@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Minesweeper</title>
+        <style>
+        h2, h3 {
+            margin: 2px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+        }
+        h3 {
+            font-size: 1rem;
+        }
+        div {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .row {
+            display: flex;
+        }
+        button {
+
+            display: block;
+            cursor: pointer;
+            background-color: #00BCD4;
+            outline: 0;
+            border: 0;
+            margin: auto;
+            border-radius: 6px;
+            padding: 5px 10px;
+            box-shadow: 2px 2px 2px 0px black;
+
+        }
+
+        .tile {
+            color: white;
+            width: 40px;
+            height: 40px;
+            /*display: inline-flex;*/
+            text-align: center;
+            font-size: 1.3rem;
+            font-family: sans-serif;
+            font-weight: bold;
+            line-height: 1.7;
+            cursor: pointer;
+            border: 1px solid;
+            box-sizing: border-box;
+            /*padding: 16px 0;*/
+            margin: 0;
+        }
+        .tile.closed {
+            background-color: green;
+        }
+        .tile.closed:hover {
+            background-color: lime;
+        }
+        .tile.freezed {
+            background-color: snow;
+        }
+        .tile {
+            background-color: blue;
+        }
+        #app {
+            border: 3px solid silver;
+            border-radius: 5px;
+            margin: 0 auto;
+            display: inline-flex;
+            padding: 5px;
+        }
+        body {
+            display: flex;
+        }
+
+        .tile.bomb {
+            background-color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="minesweeper.js"></script>
+    </body>
+</html>
