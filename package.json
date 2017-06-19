@@ -1,7 +1,7 @@
 {
   "name": "minesweeper",
   "version": "1.0.0",
-  "description": "Minesweeper created using ReactJS",
+  "description": "Minesweeper remake using ReactJS",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
